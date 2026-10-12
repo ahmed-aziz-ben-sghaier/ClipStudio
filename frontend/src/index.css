@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ink text-paper font-body;
+}
+
+/* Secours si la version de Tailwind ne fournit pas l'utilitaire text-balance */
+.text-balance {
+  text-wrap: balance;
+}
+
+.timeline-playhead {
+  left: 22%;
+  animation: playhead-scrub 4.5s ease-in-out infinite;
+}
+@keyframes playhead-scrub {
+  0%, 100% { left: 22%; }
+  50% { left: 64%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .timeline-playhead {
+    animation: none;
+  }
+}

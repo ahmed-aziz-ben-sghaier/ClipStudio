@@ -1,0 +1,31 @@
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Dependances
+node_modules/
+
+# Fichiers generes
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+
+# Uploads
+backend/uploads/
+
+# Videos et fichiers generes par les jobs
+backend/jobs/
+
+backend/data/
+
+__pycache__/
+*.pyc
+*.mp4
+backend/ai_jobs/
+backend/generated/
+backend/data/

@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Video generation
+moviepy==1.0.3
+pillow
+numpy
+imageio
+imageio-ffmpeg
+
+# Text to speech
+gtts
+pyttsx3
+
+# Optional image/API
+requests
+
+# Optional AI transcription
+faster-whisper
